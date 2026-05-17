@@ -1,8 +1,6 @@
 import Character from "./Character.js";
 import Characters from "./Characters.js";
 import Services from "./Services.js";
-import Characters from "./Characters.js";
-import Services from "./Services.js";
 import { chosen } from "./chosen.js";
 
 const bodyElement = document.body;
@@ -39,7 +37,6 @@ document.querySelectorAll("button[data-gender]").forEach(btn => {
 });
 window.addEventListener("vulcan", (e) => {
   const h1 = document.getElementById(`name-${e.detail.index}`);
-  h1.classList.toggle("red-text");
   h1.classList.toggle("red-text");
   chosen.push(e.detail.name);
   document.querySelector(".chosen")
