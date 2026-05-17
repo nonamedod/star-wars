@@ -1,21 +1,3 @@
-
-//Character - egyetlen karakter adatainak
-// megjelenítésére szolgáló osztály.
-// Legyen egy gomb is, amire akttitnva a kiválasztott
-// szereplő nevét kiírjuk egy előre meghatározott tárolóba.
-// Itt legyen a saját esemény létrehozása
-
-/*
-"name": "Lando Calrissian",
-    "height": "177",
-    "mass": "79",
-    "hair_color": "black",
-    "skin_color": "dark",
-    "eye_color": "brown",
-    "birth_year": "31BBY",
-    "gender": "male",
-*/
-
 export default class Character {
   #obj = {};
   #index = 0;

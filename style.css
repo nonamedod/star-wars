@@ -1,3 +1,16 @@
 .red-text {
     background-color: red;
 }
+
+body {
+    background-color: rgba(0, 0, 0, 0.823);
+}
+.card-text, .card-title {
+    padding-left: 10px;
+}
+.chosen {
+    padding: 10px;
+    margin: 10px;
+    color:white;
+    border: 2px solid white;
+}
