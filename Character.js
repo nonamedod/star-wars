@@ -1,21 +1,3 @@
-
-//Character - egyetlen karakter adatainak
-// megjelenítésére szolgáló osztály.
-// Legyen egy gomb is, amire akttitnva a kiválasztott
-// szereplő nevét kiírjuk egy előre meghatározott tárolóba.
-// Itt legyen a saját esemény létrehozása
-
-/*
-"name": "Lando Calrissian",
-    "height": "177",
-    "mass": "79",
-    "hair_color": "black",
-    "skin_color": "dark",
-    "eye_color": "brown",
-    "birth_year": "31BBY",
-    "gender": "male",
-*/
-
 export default class Character {
   #obj = {};
   #index = 0;
@@ -49,11 +31,9 @@ export default class Character {
             <p class="card-text">${this.#obj.birth_year}</p>
             <p class="card-text">${this.#obj.gender}</p>
             <button type="button" class="btn btn-light" id="vulcan-${this.#index}">🖖</button>
-            <button type="button" class="btn btn-light" id="colors-${this.#index}">⭐</button>
             </div>
         </div>`;
     //🖖: nev
-    //⭐: hair_color,skin_color,eye_color,
     this.parentElement.insertAdjacentHTML("beforeend", kod);
   }
   EventHandler() {
@@ -63,11 +43,6 @@ export default class Character {
       console.log("event.target", event.target);
       console.log("this", this);
       this.vulcanEvent();
-    });
-    colorsElement.addEventListener("click", (event) => {
-      console.log("event.target", event.target);
-      console.log("this", this);
-      this.colorsEvent();
     });
   }
   vulcanEvent() {
